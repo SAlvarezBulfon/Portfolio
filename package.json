@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SAlvarezBulfon/PortFolio.git"
+    "url": "git+https://github.com/SAlvarezBulfon/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SAlvarezBulfon/PortFolio/issues"
+    "url": "https://github.com/SAlvarezBulfon/Portfolio/issues"
   },
-  "homepage": "https://github.com/SAlvarezBulfon/PortFolio#readme",
+  "homepage": "https://github.com/SAlvarezBulfon/Portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.1.3"
   }
