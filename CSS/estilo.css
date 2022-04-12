@@ -188,7 +188,7 @@ html {
 }
 .resume .resume-item h4 {
   line-height: 1.8rem;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #e94f37c7;
   margin-bottom: 1rem;
@@ -202,11 +202,20 @@ html {
   margin-bottom: 1rem;
   color: #fca396;
 }
+.resume .resume-item p {
+  font-size: 1.4rem;
+
+}
+.resume .resume-item p em{
+  font-size: 1.5rem;
+
+}
 .resume .resume-item ul {
   padding-left: 2rem;
 }
 .resume .resume-item ul li {
   padding-bottom: 1rem;
+  font-size:1.2rem;
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
@@ -307,5 +316,9 @@ html {
 .skills .progress-bar {
   height: 1rem;
   background-color: #e94f37;
+}
+
+.listas-skills{
+  font-size:1.4rem;
 }
 
