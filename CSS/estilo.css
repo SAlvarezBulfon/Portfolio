@@ -6,7 +6,10 @@ html {
     box-sizing: inherit;
   }
 
-
+nav img{
+  width:12.3rem;
+  height:3.785rem;
+}
 
 /*hero section*/
 .hero{
@@ -26,6 +29,10 @@ html {
 .hero .subtitulo{
   color:#363636;
   font-size:1.5rem;
+}
+.hero img {
+  height: 20rem;
+  width: 20rem;
 }
  /*--------------------------------------------------------------
 # Sobre mí
@@ -318,7 +325,4 @@ html {
   background-color: #e94f37;
 }
 
-.listas-skills{
-  font-size:1.4rem;
-}
 
