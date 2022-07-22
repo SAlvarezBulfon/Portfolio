@@ -1,3 +1,35 @@
+:root{
+  --secondary-color: #f6f7eb;
+  --text-color-dark: #222222;
+  --text-color-subtitle-dark: #363636;
+  --text-color-light: #effbf9;
+  --border-button: #ffffff;
+
+--hue-color: 220;
+/* Colores */
+--first-color: hsl(var(--hue-color), 69%, 61%);
+--first-color-second: hsl(var(--hue-color), 69%, 61%);
+--first-alternativo: hsl(var(--hue-color), 57%, 53%);
+--first-claro: hsl(var(--hue-color), 92%, 85%);
+--first-color-50: hsl(var(--hue-color), 87%, 29%, 75%);
+--title-color: hsl(var(--hue-color), 8%, 15%);
+--text-color: hsl(var(--hue-color), 8%, 45%);
+--text-claro: hsl(var(--hue-color), 8%, 65%);
+--input-color: hsl(var(--hue-color), 70%, 96%);
+--body-color: hsl(var(--hue-color), 60%, 99%);
+
+    /* FUENTE Y TIPOGRAFÍA */
+    --body-font: 'Poppins', sans-serif;
+
+    --fuente-grande: 2rem;
+    --fuente-normal: .938rem;
+    --fuente-pequeña: .813rem;
+    --fuente-pequeña-2: .75rem;
+    --h1: 1.5rem;
+    --h2: 1.25rem;
+    --h3: 1.125rem;
+
+}
 html {
     box-sizing: border-box;
     font-size:62.5% /*1rem = 10pixeles*/
@@ -11,7 +43,18 @@ nav img{
   height:3.785rem;
 }
 
+.nav-icon{
+  fill: var(--first-color);
+}
+
+.bg-light{
+  background-color: var(--secondary-color);
+}
 /*hero section*/
+h1{
+  color: var(--first-alternativo);
+  font-size:var(--h1);
+}
 .hero{
   background-image: url('https://images.unsplash.com/photo-1596751303147-05d69e653ca4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1197&q=80');
   background-repeat: no-repeat;
@@ -23,26 +66,41 @@ nav img{
   justify-content: center;
 }
 .hero .titulo{
-  font-size:5rem;
-  color:#222222;
+  font-size:var(--h1);
+  color: var(--text-color-dark);
 }
 .hero .subtitulo{
-  color:#363636;
+  color:var(--text-color-subtitle-dark);
   font-size:1.5rem;
 }
 .hero img {
   height: 20rem;
   width: 20rem;
 }
+
+.svg-fill{
+  fill: var(--first-color);
+}
+
+.about-img{
+  width:200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+.about-svg-img{
+  width: 200px;
+
+}
  /*--------------------------------------------------------------
 # Sobre mí
 --------------------------------------------------------------*/
 .bg{
-  background-color: #e94f37;
+  background-color: var(--first-color);
 }
 
 #sobre-mi{
-  color: #effbf9;
+  color: var(--text-color-light);
 }
 /*Botones*/
 
@@ -51,13 +109,13 @@ nav img{
   text-decoration: none;
   display: inline-block;
   padding: 0.5rem 0.2rem;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-button);
   border-radius: 0.4rem;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
   font-size: 1.2rem;
-  color: white;
+  color: var(--border-button);
   z-index: 1;
  }
  
@@ -84,7 +142,7 @@ nav img{
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #ffffff;
+  background-color: var(--border-button);
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -92,19 +150,19 @@ nav img{
  }
  
  .button:hover {
-  color: #e94f37;
-  border: 1px solid #ffffff;
+  color: var(--first-color);
+  border: 1px solid var(--border-button);
  }
  
  .button:hover:before {
   top: -35%;
-  background-color: #ffffff;
+  background-color: var(--border-button);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
  }
  
  .button:hover:after {
   top: -45%;
-  background-color: #f6f7eb;
+  background-color: var(--secondary-color);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
  }
 
@@ -114,15 +172,14 @@ nav img{
   text-decoration: none;
   display: inline-block;
   padding: 0.5rem 0.2rem;
-  border: 1px solid #f6f7eb;
+  border: 1px solid var(--first-color);
   border-radius: 0.4rem;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
   font-size: 1.6rem;
-  color: #f6f7eb;
+  color:var(--first-color);
   z-index: 1;
-  margin-left: 1rem;
  }
  
  .button1:before {
@@ -148,7 +205,7 @@ nav img{
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #e94f37;
+  background-color: var(--first-color);
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -156,19 +213,19 @@ nav img{
  }
  
  .button1:hover {
-  color: #f6f7eb;
-  border: 1px solid #e94f37;
+  color: var(--secondary-color);
+  border: 1px solid var(--first-color);
  }
  
  .button:hover:before {
   top: -35%;
-  background-color: #e94f37;
+  background-color: var(--first-color);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
  }
  
  .button1:hover:after {
   top: -45%;
-  background-color: #e94f37;
+  background-color: var(--first-color);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
  }
 
@@ -177,37 +234,39 @@ nav img{
 # Resumen
 --------------------------------------------------------------*/
 .resume{
-  background-color: #f6f7eb;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 .resume .resume-title {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #363636;
+  color: var(--first-color);
   text-transform: uppercase;
 }
 .resume .resume-item {
   padding: 0 0 2rem 2rem;
   margin-top: -0.2rem;
-  border-left:  0.2rem solid #e94f37;
+  border-left:  0.2rem solid var(--first-color);
   position: relative;
 }
 .resume .resume-item h4 {
   line-height: 1.8rem;
   font-size: 1.7rem;
   font-weight: 600;
-  color: #e94f37c7;
+  color: var(--first-alternativo);
   margin-bottom: 1rem;
 }
 .resume .resume-item h5 {
   font-size: 1.6rem;
-  background: #f8e9df;
+  background: var(--input-color);
+  border-radius: 0.4rem;
   padding: .5rem 1.5rem;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #fca396;
+  color: var(--first-color)
 }
 .resume .resume-item p {
   font-size: 1.4rem;
@@ -235,8 +294,8 @@ nav img{
   border-radius: 5rem;
   left: -.9rem;
   top: 0;
-  background: #fff;
-  border: 2px solid #e94f37;
+  background: var(--border-button);
+  border: 2px solid var(--first-color);
 }
 
 
@@ -246,6 +305,7 @@ nav img{
 .proyecto {
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 .proyecto img{
   height: 100%;
@@ -262,17 +322,24 @@ nav img{
   left:0;
   width: 100%;
   height: 100%;;
-  background-color: #df4b35a6;
+  background-color:var(--first-color-50);
   display: flex;
   align-items: flex-end;
-  padding:3rem;
+  padding: 1rem;
   opacity: 0;
 
 }
 
+.proyecto-overlay h4{
+  font-size: var(--fuente-grande);
+}
+.proyecto-overlay p{
+  font-size: var(--h2);
+}
+
 .proyecto-overlay h4,
 .proyecto-overlay p{
-  color:#e4e5d1;
+  color:var(--text-color-light);
  
 }
 
@@ -286,18 +353,19 @@ nav img{
 
 .link-proyecto{
   text-decoration: none;
-  color:white;
+  color:var(--border-button);
 }
 
 .link-proyecto:hover{
-  color:#222222
+  color:var(--input-color);
 }
 
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills{
-  background-color: #f6f7eb;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 .skills .progress {
   height: 6rem;
@@ -311,18 +379,18 @@ nav img{
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  color: #222222;
+  color: var(--text-color);
 }
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
 }
 .skills .progress-bar-wrap {
-  background: #e4e5d1;
+  background: var(--input-color);
 }
 .skills .progress-bar {
   height: 1rem;
-  background-color: #e94f37;
+  background-color: var(--first-color);
 }
 
 
