@@ -50,6 +50,9 @@ nav img{
 .bg-light{
   background-color: var(--secondary-color);
 }
+.nav-item a:hover{
+  color:var(--first-color)
+}
 /*hero section*/
 h1{
   color: var(--first-alternativo);
@@ -213,7 +216,7 @@ h1{
  }
  
  .button1:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   border: 1px solid var(--first-color);
  }
  
